@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Tomorrow:wght@400;700&family=Poppins:wght@400;700&family=Nunito:wght@400;700&display=swap');
+
+body {
+	background-color: #f1f3f4;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+}
+
+.main-container {
+	background-color: #23212c;
+	width: 1200px;
+	height: 740px;
+	border-radius: 15px;
+	padding: 35px 50px;
+	display: grid;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.navbar {
+	display: grid;
+	grid-template-columns: 1fr 3fr 1fr;
+	align-items: baseline;
+	color: white;
+}
+
+.navbar-start {
+	font-family: 'Tomorrow', sans-serif;
+	font-size: 24px;
+	font-weight: 700;
+}
+
+.navbar-center {
+	display: flex;
+	justify-content: center;
+	gap: 50px;
+}
+
+.navbar-center span {
+	font-family: 'Nunito', sans-serif;
+	font-size: 18px;
+	font-weight: 900;
+	cursor: pointer;
+	transition: color 0.3s;
+}
+
+.navbar-center span:hover {
+	color: #33cc99;
+}
+
+.content-container {
+	margin-top: 50px;
+	display: flex;
+	gap: 5%;
+	height: calc(100% - 85px);
+}
+
+.info-container {
+	width: 50%;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	color: white;
+	font-family: 'Poppins', sans-serif;
+}
+
+.image-container {
+	width: 45%;
+	flex-wrap: wrap;
+	display: flex; 
+	justify-content: center;
+	align-items: flex-end;
+	overflow: hidden;
+}
+
+.image-container img {
+	width: 100%;
+	height: 95%;
+}
+
+.title-label {
+	font-size: 32px;
+	font-weight: 900;
+	letter-spacing: 0.5px;
+}
+
+.description-label {
+	margin-top: 10px;
+	font-size: 18px;
+	letter-spacing: 0.5px;
+}
+
+.know-more-button {
+	margin-top: 25px;
+	font-size: 20px;
+	background-color: #6000B9;
+	color: white;
+	border-radius: 12px;
+	padding: 10px 50px;
+	display: inline-block;
+	text-align: center; 
+	cursor: pointer;
+	box-shadow: 0px 6px 16px rgba(150, 150, 150, 0.3);
+}
+
+.social-media-container{
+	color: white;
+	font-family: 'Nunito', sans-serif;
+	position: absolute;
+	bottom: 40px;
+	display: flex;
+	align-items: flex-end;
+	gap: 10px;
+}
+
+.follow-label{
+	font-size: 16px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	margin-right: 40px;
+}
+
+.social-media-container img{
+   cursor: pointer;
+}
+
+.down-arrow {
+	position: absolute;
+	bottom: -35px;
+	left: calc(100% - 25px);
+	transform: rotate(270deg);
+	font-size: 50px !important;
+	cursor: pointer;
+}
